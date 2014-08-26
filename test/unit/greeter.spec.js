@@ -16,11 +16,11 @@ describe('greeter', function(){
   describe('input text', function(){
 
     it('is valid if it contains only alpha characters', function(){
-      expect(greeter.isValid('Dane Reynolds1')).toBe(true);
+      expect(greeter.isValid('Stimpson J Cat')).toBe(true);
     });
 
     it('is invalid if it contains non alpha characters', function(){
-      expect(greeter.isValid('Dane Reyn0lds')).toBe(false);
+      expect(greeter.isValid('Stimps0n J Cat')).toBe(false);
     });
 
   });
@@ -28,16 +28,16 @@ describe('greeter', function(){
   describe('when button is clicked with valid input', function(){
 
     beforeEach(function() {
-      greeter.$input.val('Dane Reynolds');
+      greeter.$input.val('Stimpson J Cat');
       greeter.$submit.click();
     });
 
     it('should display a greeting', function(){
-      expect(greeter.$result.text()).toEqual('Hello Dane Reynolds');
+      expect(greeter.$result.text()).toEqual('Hello Stimpson J Cat');
     });
 
     it('should log an info message', function(){
-      expect(greeter.logger.info).toHaveBeenCalledWith('just said hello to -> Dane Reynolds');
+      expect(greeter.logger.info).toHaveBeenCalledWith('just said hello to -> Stimpson J Cat');
     });
 
   });
@@ -45,7 +45,7 @@ describe('greeter', function(){
   describe('when button is clicked with invalid input', function(){
 
     beforeEach(function(){
-      greeter.$input.val('Dane Reyn0lds');
+      greeter.$input.val('Stimps0n J Cat');
       greeter.$submit.click();
     });
 
@@ -54,7 +54,7 @@ describe('greeter', function(){
     });
 
     it('should log a warn message', function(){
-      expect(greeter.logger.warn).toHaveBeenCalledWith('invalid input -> Dane Reyn0lds');
+      expect(greeter.logger.warn).toHaveBeenCalledWith('invalid input -> Stimps0n J Cat');
     });
 
   });

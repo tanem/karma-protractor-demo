@@ -28,7 +28,7 @@ exports.config = {
 
   onPrepare: function() {
 
-    // Bwa ha ha.
+    // Ensure the correct report dirs are created.
     require('mkdirp').sync('_reports/integration-results');
 
     // The require statement must be down here, since jasmine-reporters
@@ -39,6 +39,15 @@ exports.config = {
     jasmine.getEnv().addReporter(
       new jasmine.JUnitXmlReporter('_reports/integration-results', true, true)
     );
+
+    // Don't wait for Angular, this means we can use the same DSL as if
+    // it *was* an Angular site.
+    browser.ignoreSynchronization = true;
+
+    // The amount of time the driver should wait when searching for an
+    // element if it is not immediately present.
+    browser.manage().timeouts().implicitlyWait(10000);
+
   }
 
 };
