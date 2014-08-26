@@ -13,6 +13,7 @@
   },
   "scripts": {
     "karma": "./node_modules/karma/bin/karma start karma.conf.js",
+    "karma-bs": "./node_modules/karma/bin/karma start karma-bs.conf.js",
     "protractor": "./node_modules/.bin/protractor protractor.conf.js",
     "protractor-bs": "./node_modules/.bin/protractor protractor-bs.conf.js",
     "start": "python -m SimpleHTTPServer"
@@ -35,6 +36,7 @@
     "habitat": "^1.1.0",
     "jasmine-reporters": "^1.0.0",
     "karma": "^0.12.21",
+    "karma-browserstack-launcher": "^0.1.1",
     "karma-chrome-launcher": "^0.1.4",
     "karma-coverage": "^0.2.6",
     "karma-jasmine": "^0.2.2",

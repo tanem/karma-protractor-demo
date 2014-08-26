@@ -16,7 +16,7 @@ describe('greeter', function(){
 	describe('input text', function(){
 
 		it('is valid if it contains only alpha characters', function(){
-			expect(greeter.isValid('Dane Reynolds')).toBe(true);
+			expect(greeter.isValid('Dane Reynolds1')).toBe(true);
 		});
 
 		it('is invalid if it contains non alpha characters', function(){

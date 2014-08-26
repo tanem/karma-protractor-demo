@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-    	'bower_components/jquery/dist/jquery.js',
-     	'src/logger/index.js',
+      'http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
+      'src/logger/index.js',
       'src/greeter/index.js',
       'test/unit/logger.spec.js',
       'test/unit/greeter.spec.js'
