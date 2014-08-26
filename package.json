@@ -12,7 +12,8 @@
     "url": "git://github.com/tanem/karma-protractor-demo.git"
   },
   "scripts": {
-    "karma": "./node_modules/karma/bin/karma start karma.conf.js",
+    "karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
+    "karma-watch": "./node_modules/karma/bin/karma start karma.conf.js",
     "protractor": "./node_modules/.bin/protractor protractor.conf.js",
     "protractor-bs": "./node_modules/.bin/protractor protractor-bs.conf.js",
     "start": "python -m SimpleHTTPServer"
