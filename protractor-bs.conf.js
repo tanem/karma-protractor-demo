@@ -1,13 +1,12 @@
 var env = require('habitat').load('./.env');
+var user = env.get('browserstackUser');
+var key = env.get('browserstackKey');
 
 exports.config = {
 
-	username: env.get('browserstackUsername'),
-	key: env.get('browserstackKey'),
-
 	// The address the site is available at.
-  baseUrl: 'http://tanem.github.io/karma-protractor-demo/',
-  
+  baseUrl: 'http://tanem.github.io',
+
 	// The address of a running selenium server.
 	seleniumAddress: 'http://hub.browserstack.com/wd/hub',
 
@@ -16,9 +15,10 @@ exports.config = {
 		{
 			browserName: 'chrome',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
-		},
+			'browserstack.user': user,
+			'browserstack.key': key
+		}
+		/*,
 		{
 			browserName: 'firefox',
 			'browserstack.debug': true,
@@ -57,7 +57,7 @@ exports.config = {
 			'browserstack.debug': true,
 			'browserstack.user': process.env.BROWSERSTACK_USER,
 			'browserstack.key': process.env.BROWSERSTACK_KEY
-		}
+		}*/
 	],
 
 	// Options to be passed to Jasmine-node.
@@ -69,6 +69,10 @@ exports.config = {
 
 	specs: [
 		'test/integration/*.spec.js'
-	]
+	],
+
+	params: {
+		isBrowserstack: true
+	}
 
 };

@@ -22,10 +22,14 @@ exports.config = {
     'test/integration/*.spec.js'
   ],
 
+  params: {
+    isBrowserstack: false
+  },
+
   onPrepare: function() {
 
-  	// Bwa ha ha.
-  	require('mkdirp').sync('_reports/integration-results');
+    // Bwa ha ha.
+    require('mkdirp').sync('_reports/integration-results');
 
     // The require statement must be down here, since jasmine-reporters
     // needs jasmine to be in the global and protractor does not guarantee

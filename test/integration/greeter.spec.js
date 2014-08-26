@@ -10,7 +10,13 @@ describe('Greeter', function() {
 		// element if it is not immediately present.
 		browser.manage().timeouts().implicitlyWait(10000);
 
-		browser.get('/');
+		// A little hackery to ensure the correct entry point URLs are used.
+		if (browser.params.isBrowserstack) {
+			browser.get('/karma-protractor-demo');
+		} else {
+			browser.get('/');
+		}
+
 	});
 
 	it('should show the correct greeting when valid input is entered', function(){
