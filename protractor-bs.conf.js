@@ -42,8 +42,8 @@ exports.config = {
       browserName: 'iPad',
       device: 'iPad Air',
       'browserstack.debug': true,
-      'browserstack.user': process.env.BROWSERSTACK_USER,
-      'browserstack.key': process.env.BROWSERSTACK_KEY
+      'browserstack.user': user,
+      'browserstack.key': key
     },
     {
       browserName: 'iPhone',
