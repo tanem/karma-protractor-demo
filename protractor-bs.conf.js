@@ -4,7 +4,7 @@ var key = env.get('browserstackKey');
 
 exports.config = {
 
-	// The address the site is available at.
+	// The host the site is available at.
   baseUrl: 'http://tanem.github.io',
 
 	// The address of a running selenium server.
@@ -17,8 +17,7 @@ exports.config = {
 			'browserstack.debug': true,
 			'browserstack.user': user,
 			'browserstack.key': key
-		}
-		/*,
+		},
 		{
 			browserName: 'firefox',
 			'browserstack.debug': true,
@@ -57,7 +56,7 @@ exports.config = {
 			'browserstack.debug': true,
 			'browserstack.user': process.env.BROWSERSTACK_USER,
 			'browserstack.key': process.env.BROWSERSTACK_KEY
-		}*/
+		}
 	],
 
 	// Options to be passed to Jasmine-node.
