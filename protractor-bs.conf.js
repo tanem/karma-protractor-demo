@@ -12,6 +12,7 @@ exports.config = {
 
 	// Capabilities to be passed to the webdriver instance.
 	multiCapabilities: [
+		/*
 		{
 			browserName: 'chrome',
 			'browserstack.debug': true,
@@ -21,21 +22,22 @@ exports.config = {
 		{
 			browserName: 'firefox',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
+			'browserstack.user': user,
+			'browserstack.key': key
 		},
 		{
 			browserName: 'internet explorer',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
+			'browserstack.user': user,
+			'browserstack.key': key
 		},
 		{
 			browserName: 'safari',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
+			'browserstack.user': user,
+			'browserstack.key': key
 		},
+		*/
 		{
 			browserName: 'iPad',
 			device: 'iPad Air',
@@ -47,15 +49,15 @@ exports.config = {
 			browserName: 'iPhone',
 			device: 'iPhone 5S',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
+			'browserstack.user': user,
+			'browserstack.key': key
 		},
 		{
 			browserName: 'android',
 			device: 'Google Nexus 7',
 			'browserstack.debug': true,
-			'browserstack.user': process.env.BROWSERSTACK_USER,
-			'browserstack.key': process.env.BROWSERSTACK_KEY
+			'browserstack.user': user,
+			'browserstack.key': key
 		}
 	],
 
@@ -63,7 +65,7 @@ exports.config = {
 	jasmineNodeOpts: {
 		isVerbose: true,
 		showColors: true,
-		defaultTimeoutInterval: 30000
+		defaultTimeoutInterval: 300000
 	},
 
 	specs: [
