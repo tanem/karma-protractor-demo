@@ -31,7 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-			'src/**/*.js': 'coverage'
+      'src/**/*.js': 'coverage'
     },
 
 
@@ -45,13 +45,13 @@ module.exports = function(config) {
     },
 
     coverageReporter: {
-    	 reporters: [
-    		{ type: 'html', dir: '_reports/unit-coverage-html' },
-    		{ type: 'cobertura', dir: '_reports/unit-coverage-cobertura' }
-    		// This will output the report to the console.
-    		// { type: 'text-summary' }
-  		]
-  	},
+       reporters: [
+        { type: 'html', dir: '_reports/unit-coverage-html' },
+        { type: 'cobertura', dir: '_reports/unit-coverage-cobertura' }
+        // This will output the report to the console.
+        // { type: 'text-summary' }
+      ]
+    },
 
     // web server port
     port: 9876,
