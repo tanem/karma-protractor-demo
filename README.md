@@ -71,6 +71,8 @@ jUnitXML will be output to `_results/integration-results`.
 
 ### BrowserStack
 
+Protractor can be pointed at BrowserStack's running Selenium server, and we can also specify BrowserStack browsers to run our tests against. Super useful!
+
 The default implementation uses a GitHub pages URL to serve up the content. Check out the `baseUrl` property in `protractor-bs.conf.js`. Update this if your site is hosted elsewhere.
 
 To run:
