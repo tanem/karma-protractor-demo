@@ -14,7 +14,7 @@ function Greeter(logger) {
 }
 
 Greeter.prototype.isValid = function(inputValue){
-	return /^[a-zA-Z\s]+$/.test(inputValue);
+	return (/^[a-zA-Z\s]+$/).test(inputValue);
 };
 
 Greeter.prototype.submitClickAction = function(){

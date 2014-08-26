@@ -1,0 +1,17 @@
+.greeter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+.greeter-input,
+.greeter-submit,
+.greeter-result {
+  font-size: 2em; 
+}
+
+.greeter-result {
+  display: block;
+  margin-top: 0.3em;
+}
