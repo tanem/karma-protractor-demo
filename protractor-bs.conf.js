@@ -5,6 +5,9 @@ exports.config = {
 	username: env.get('browserstackUsername'),
 	key: env.get('browserstackKey'),
 
+	// The address the site is available at.
+  baseUrl: 'http://tanem.github.io/karma-protractor-demo/',
+  
 	// The address of a running selenium server.
 	seleniumAddress: 'http://hub.browserstack.com/wd/hub',
 

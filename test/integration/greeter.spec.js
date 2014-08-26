@@ -10,7 +10,7 @@ describe('Greeter', function() {
 		// element if it is not immediately present.
 		browser.manage().timeouts().implicitlyWait(10000);
 
-		browser.get('http://localhost:8000');
+		browser.get('/');
 	});
 
 	it('should show the correct greeting when valid input is entered', function(){
