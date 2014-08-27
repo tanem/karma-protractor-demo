@@ -43,6 +43,10 @@ A Cobertura coverage report will be output to `_results/unit-coverage-cobertura`
 
 An HTML coverage report will also be output to `_results/unit-coverage-html`. Open the relevant `index.html` file in a browser to view the results.
 
+### Debugging
+
+Run Karma in continuous integration mode, then run in debug mode from the running browser.
+
 ## e2e tests
 
 ### Local
@@ -84,3 +88,7 @@ $ npm run protractor-bs
 #### jUnit reporting
 
 jUnitXML will be output to `_results/integration-bs-results`.
+
+### Debugging
+
+See [debugging Protractor tests](https://github.com/angular/protractor/blob/master/docs/debugging.md#debugging-protractor-tests).
