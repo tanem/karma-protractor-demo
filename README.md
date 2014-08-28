@@ -1,6 +1,6 @@
 # karma-protractor-demo
 
-A little demo which shows how one might wire up [Karma](https://github.com/karma-runner/karma) and [Protractor](https://github.com/angular/protractor) for unit and end-to-end (e2e) testing.
+A little demo app which shows how one might wire up [Karma](https://github.com/karma-runner/karma) and [Protractor](https://github.com/angular/protractor) for unit and end-to-end (e2e) testing.
 
 ## Install
 
