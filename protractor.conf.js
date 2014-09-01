@@ -1,7 +1,7 @@
 exports.config = {
 
   // The host the site is available at.
-  baseUrl: 'http://127.0.0.1:8000/',
+  baseUrl: 'http://127.0.0.1:3000/',
 
   // The address of a running selenium server.
   seleniumAddress: 'http://localhost:4444/wd/hub',
