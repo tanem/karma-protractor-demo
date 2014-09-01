@@ -8,7 +8,8 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   multiCapabilities: [
-    { 'browserName': 'chrome' }
+    { 'browserName': 'chrome' },
+    { 'browserName': 'firefox' }
   ],
 
   // Options to be passed to Jasmine-node.
