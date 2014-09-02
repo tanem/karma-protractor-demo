@@ -12,7 +12,6 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   multiCapabilities: [
-    /*
     {
       browserName: 'chrome',
       'browserstack.debug': true,
@@ -36,8 +35,8 @@ exports.config = {
       'browserstack.debug': true,
       'browserstack.user': user,
       'browserstack.key': key
-    },
-    */
+    }
+    /*,
     {
       browserName: 'iPad',
       device: 'iPad Air',
@@ -59,6 +58,7 @@ exports.config = {
       'browserstack.user': user,
       'browserstack.key': key
     }
+    */
   ],
 
   // Options to be passed to Jasmine-node.
