@@ -35,8 +35,7 @@ exports.config = {
       'browserstack.debug': true,
       'browserstack.user': user,
       'browserstack.key': key
-    }
-    /*,
+    },
     {
       browserName: 'iPad',
       device: 'iPad Air',
@@ -58,7 +57,6 @@ exports.config = {
       'browserstack.user': user,
       'browserstack.key': key
     }
-    */
   ],
 
   // Options to be passed to Jasmine-node.
