@@ -80,9 +80,9 @@ exports.config = {
     // Ensure the correct report dirs are created.
     require('mkdirp').sync('_reports/integration-bs-results');
 
-    // The require statement must be down here, since jasmine-reporters
-    // needs jasmine to be in the global and protractor does not guarantee
-    // this until inside the onPrepare function.
+    // `jasmine-reporters` needs jasmine to be in the global,
+    // and protractor does not guarantee this until inside the
+    // onPrepare function.
     require('jasmine-reporters');
 
     jasmine.getEnv().addReporter(
