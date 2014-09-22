@@ -1,6 +1,6 @@
 {
   "name": "karma-protractor-demo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Karma & Protractor test runner demo.",
   "main": "index.js",
   "homepage": "https://github.com/tanem/karma-protractor-demo",
